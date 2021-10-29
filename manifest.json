@@ -1,0 +1,15 @@
+{
+    "name": "ArXiv Enhanced",
+    "description": "A browser extension to highlight text, add tags, link referred arxiv papers and add notes to pdf",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
