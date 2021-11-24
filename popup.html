@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="button.css">
-  </head>
-  <body>
-    <button id="changeColor"></button>
+    <title>ArXiv Enhanced</title>
+
+    <link href="popup.css"               rel="stylesheet" type="text/css">
+    <link href="deps/bootstrap.min.css"       rel="stylesheet" type="text/css">
+    <link href="deps/bootstrap-tagsinput.css" rel="stylesheet" type="text/css">
+
     <script src="popup.js"></script>
-</body>
+    <script src="deps/jquery.min.js"></script>
+    <script src="deps/bootstrap-tagsinput.min.js"></script>
+  </head>
+
+  <body>
+    <img src="images/icon.png"></img>
+    <input id="tags" name="tags" placeholder="tags"/>
+    <input type="text" value="" data-role="tagsinput"></input>
+    <input id="comments" name="comments" placeholder="comments"/>
+    <input id="submit" type="submit" value="Submit"/>
+  </body>
 </html>
