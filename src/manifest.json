@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "ArXiv Enhanced",
+  "description": "A browser extension to highlight text, add tags, link referred arxiv papers and add notes to pdf",
+  "options_page": "options.html",
+  "background": { "service_worker": "background.bundle.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.48.png"
+  },
+  "icons": {
+    "16": "icon.16.png",
+    "48": "icon.48.png",
+    "128": "icon.128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["contentScript.bundle.js"],
+      "css": ["content.styles.css"]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["content.styles.css", "icon.128.png", "icon.48.png", "icon.16.png"],
+      "matches": []
+    }
+  ]
+}
