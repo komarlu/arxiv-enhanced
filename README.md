@@ -28,3 +28,11 @@ This plugin was developed based on [chrome-extension-boilerplate-react](https://
 3. In chrome `chrome://extensions` developer, Load Unpacked -> select `build/` directory
 
 ![arxiv_notion](https://user-images.githubusercontent.com/6959308/143616792-af31f96f-d2e7-492e-9043-7373779c64e2.png)
+
+### Notion database 
+
+1. Sign up on notion
+2. Create an integration and the database to use in this project: [link](https://developers.notion.com/docs/getting-started#share-a-database-with-your-integration)
+3. Add the database ID to this project
+
+
